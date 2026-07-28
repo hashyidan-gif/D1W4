@@ -1,0 +1,132 @@
+/*  Apa perbedaan antara memilih elemen dengan class selector dan id selector?
+    Kapan sebaiknya masing-masing digunakan?
+    (Element Selector adalah selector yg menjadikan satu jenis Tag sebagai Target)
+    (Baik digunakan saat suatu Tag atau Elemen yang sama secara umum akan menggunakan jenis style yg sama)
+
+    (Class Selector adalah selector yg menjadikan variabel kelas/class sebagai Target)
+    (Baik digunakan saat ada beberapa Tag yang berbeda ingin menggunakan jenis style yg sama dengan menyamakan kelasnya)
+
+    (Id Selector adalah Selector yg menjadikan Id atau Tanda Khusus sebagai Targetnya, bisa disamakan dengan kartu identitas)
+    (Baik digunakan saat hanya ada satu Tag/Tag tunggal yang secara Khusus/Unik ingin menggunakan style tertentu)
+
+    Sebutkan 2 cara menghubungkan CSS ke HTML,
+    dan mana yang direkomendasikan untuk project multi-halaman?
+    (Ada External dan Internal [termasuk inline], untuk multi-halaman umumnya akan lebih baik menggunakan CSS Eksternal) */
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(#f9f9f9 25%, #fff);
+}
+
+header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.Jrk {
+  margin-left: 50%;
+}
+.circle {
+  background: radial-gradient(blue, purple);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.judul-nama {
+  margin-top: -12px;
+  text-align: left;
+  text-shadow: 8px, 18px, 18px, 8px, rgb(245, 3, 3);
+  font-size: 1rem;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.kartu {
+  background-color: #fff;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #666;
+  padding: 24px;
+  width: 30%;
+  min-height: 500px;
+  text-align: center;
+}
+
+.p {
+  background-color: hsl(240, 2%, 91%);
+  width: 100%;
+  height: auto;
+  box-shadow: inset 4px 4px 12px #666;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  margin: 0 auto 12px;
+}
+
+.nama {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 0 0 4px;
+}
+
+.sub {
+  color: hsl(210, 70%, 50%);
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.info {
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+}
+
+.deskripsi {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 6px 0;
+}
+
+button {
+  width: 90px;
+  padding: 5px 0;
+  background: linear-gradient(125deg, green, rgb(1, 86, 1));
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+button:hover {
+  background-color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid #e0e0e0;
+}
